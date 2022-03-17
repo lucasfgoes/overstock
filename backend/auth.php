@@ -6,7 +6,6 @@
     <label for="senha">Senha:</label>
     <input type="password" id="senha" name="senha">
     <button type="submit">Entrar</button>
-    <button type='button' onClick='redireciona()'>Cadastrar</button>
 
 <?php
   if($_POST){
@@ -25,8 +24,4 @@
 ?>
 
 </form>
-
-<script>
-  const redireciona = ()=> window.location.href = '/overstock/pages/cadastro.php';
-</script>
 
