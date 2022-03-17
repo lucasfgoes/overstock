@@ -13,7 +13,6 @@
     include('conexao.php');
     $stmt = $conn->prepare('SELECT * FROM usuarios WHERE email = :email and senha = :senha' );
     $stmt->execute(array('email' => $_POST['e-mail'], 'senha' => $_POST['senha']));
-
     $dados = $stmt->fetchAll();
 
     if(count($dados)>0){

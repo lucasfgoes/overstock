@@ -1,4 +1,4 @@
-export default function add(tabelaEstoque){
+export default function (){
   const btnAdd = document.querySelector('.btn_add');
 
   // add produtos
@@ -6,16 +6,13 @@ export default function add(tabelaEstoque){
   const add2 = document.querySelector('#add2');
   const add3 = document.querySelector('#add3');
   const add4 = document.querySelector('#add4');
-  const add5 = document.querySelector('#add5');
 
   // botão adicionar
-  btnAdd.addEventListener('click',async e=>{
-    if(!add1.value.length || !add2.value.length || !add3.value.length) return alert('Por favor preencha os campos!');
-    if (!Number(add2.value) || !Number(add3.value)) return alert('Campo inválido!');
+  btnAdd.addEventListener('click',async ()=>{
+    if(!add1.value.length || !add2.value || !add3.value || !add4.value) return alert('Por favor preencha os campos!');
 
     const form = new FormData();
-    form.append('produto', add1.value);
-    form.append('marca', add5.value);
+    form.append('id', add1.value);
     form.append('custo', add2.value);
     form.append('preco', add3.value);
     form.append('quantidade', add4.value);

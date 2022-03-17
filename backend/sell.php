@@ -1,17 +1,12 @@
 <?php
 include('./conexao.php');
 
-$stmt = $conn->prepare('SELECT * FROM produtos WHERE produto = :produto and marca = :marca' );
+$stmt = $conn->prepare('SELECT * FROM produtos WHERE id = :id ' );
 
-$stmt->execute(array(
-  'produto' => $_GET['produto'],
-  'marca' => $_GET['marca'],
-));
+$stmt->execute(array('id' => $_GET['id']));
 $dados = $stmt->fetchAll();
 
-$p = $_GET['produto'];
-$m = $_GET['marca'];
-$id = $dados[0]['id'];
+$id = $_GET['id'];
 $q = $_GET['quantidade'];
 $qtd_bd = $dados[0]['quantidade'];
 $q_update;
@@ -28,7 +23,6 @@ if($q > $qtd_bd){
 
   echo json_encode(array(true));
 }
-
 
 
 ?>

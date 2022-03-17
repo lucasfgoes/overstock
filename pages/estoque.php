@@ -10,6 +10,7 @@
     </div>
     
     <div class="crud">
+      <?php require('../components/register_prod.php')?>
       <?php require('../components/add_estoque.php')?>
       <?php require('../components/edit_estoque.php')?>
       <?php require('../components/venda_estoque.php')?>

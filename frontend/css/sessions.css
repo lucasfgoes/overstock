@@ -172,6 +172,7 @@ div.marketing-content p {
   opacity: 0.85;
 }
 
+.crud .register,
 .crud .add,
 .crud .edit,
 .crud .del {
@@ -180,16 +181,20 @@ div.marketing-content p {
   margin-bottom: 20px;
 }
 
+.crud .register button {
+  background: #00cd69;
+}
+
 .crud .add button {
-  background: #44dd55;
+  background: #1e90ff;
 }
 
 .crud .edit button {
-  background: #55aaff;
+  background: #7208af;
 }
 
 .crud .del button {
-  background: #ffdd44;
+  background: #db653b;
 }
 
 .off {

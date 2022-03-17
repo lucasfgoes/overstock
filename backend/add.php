@@ -2,20 +2,17 @@
 if($_POST){
   try{
     include('conexao.php');
-    $quantidade = $_POST['quantidade'];
-    $produto = $_POST['produto'];
-    $marca = $_POST['marca'];
-    $custo = $_POST['custo'];
-    $preco = $_POST['preco'];
+    $stmt = $conn->prepare('SELECT * FROM produtos WHERE id = :id' );
+    $stmt->execute(array('id' => $_POST['id'])); 
+    $quantidade = $stmt->fetchAll();
 
-    $stmt = $conn->prepare('INSERT INTO produtos (produto, marca,custo,preco,quantidade) VALUES (:produto,:marca,:custo,:preco,:quantidade)' );
+    $stmt = $conn->prepare('UPDATE produtos SET custo = :custo, preco = :preco, quantidade = :quantidade WHERE id = :id' );
     $stmt->execute(
       array(
-        'produto' => $_POST['produto'],
-        'marca' => $_POST['marca'],
         'custo' => $_POST['custo'],
         'preco' => $_POST['preco'],
-        'quantidade' => $_POST['quantidade'],
+        'quantidade' => $_POST['quantidade'] + $quantidade[0]['quantidade'],
+        'id' => $_POST['id']
       )); 
     
     print_r('ok');
