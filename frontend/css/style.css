@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #252525;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #eee;
+  border-radius: 2px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+a.btn2 {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  background: #4a5;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.4s all;
+}
+
+.btn2:hover {
+  background-color: rgb(44, 137, 212);
+  opacity: 1;
+}
+
+a.btn2:visited {
+  color: white;
+}

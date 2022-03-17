@@ -1,0 +1,31 @@
+/* footer */
+
+.footer {
+  background: #4a5;
+  padding: 15px;
+}
+
+.container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-link {
+  font-size: 2em;
+  font-family: serif;
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px 1px gray;
+  text-transform: uppercase;
+}
+
+.logo-link:hover {
+  text-shadow: 2px 2px 2px rgb(3, 3, 80);
+}
+
+.container-footer p {
+  color: white;
+  margin: 10px 10px 0 0;
+  font-size: 1.2em;
+}

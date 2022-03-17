@@ -1,0 +1,14 @@
+/* banner */
+
+.banner {
+  height: 200px;
+  background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0)),
+    url("../img/estoque.png") center center repeat;
+}
+
+.banner-h1 {
+  color: white;
+  text-shadow: 4px 4px 4px gray;
+  text-align: center;
+  padding-top: 60px;
+}
