@@ -78,14 +78,30 @@ div.marketing-content p {
   font-family: monospace;
 }
 
-.estoque table {
-  max-width: 960px;
+.estoque .container-tabela {
+  height: 500px;
+  max-width: 750px;
   margin: 40px auto;
+  overflow-y: scroll;
+}
+
+.estoque .container-tabela::-webkit-scrollbar {
+  width: 12px;
+}
+
+.estoque .container-tabela::-webkit-scrollbar-thumb {
+  background-color: #8a8a8a;
+  border-radius: 2px;
+}
+
+.estoque table {
   box-shadow: 2px 2px 6px #999;
-  overflow: scroll;
+  margin: 0 auto;
+  border-radius: 4px;
 }
 
 .estoque table th {
+  position: sticky;
   padding: 8px;
   font-size: 1.25em;
   background: #4a5;

@@ -2,7 +2,7 @@
 <?php if(!isset($_SESSION['auth'])){ header('location: /overstock'); } ?>
   <section class="estoque on">
     <?php require('../components/table.php')?>
-
+  
     <div class="links">
       <a href="#add">adicionar</a>
       <a href="#edit">editar</a>

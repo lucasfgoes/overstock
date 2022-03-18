@@ -8,7 +8,7 @@
         <p>Venha descobrir mais sobre a OVERSTOCK! Oferecemos um sistema altamente simples para o gerenciamento do fluxo de estoque do seu negócio.</p>
       </div>
 
-      <a class="btn" href="https://www.youtube.com/channel/UCeHj3N6NbOrf6IT_0dYvMyg" target="_blank">Entre em
+      <a class="btn" href="https://www.linkedin.com/in/overstock-corpora%C3%A7%C3%A3o-905b26234/" target="_blank">Entre em
         contato</a>
     </div>
   </section>
