@@ -15,7 +15,7 @@ if($_POST){
         'id' => $_POST['id']
       )); 
     
-    print_r('ok');
+    print_r('certo');
   }catch(PDOException $e){
      print_r($e);
   } 
